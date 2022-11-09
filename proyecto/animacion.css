@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+.header {
+    width: 100px;
+    height: 100px;
+    background-color: #9933cc;
+    border-radius: 50%; 
+    /*animation: to-green 2s ease;*/
+    /*animation: rotate 1s ease-in infinite, to-green 2s ease infinite;*/
+    animation: bounce 2s ease infinite;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("https://phpagency.com/wp-content/uploads/2022/07/php-facebook.jpg");
+}
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100vw) scale(0.5);
+        background: greenyellow;
+    }
+    100% {
+        transform: translateX(0vw);
+
+    }   
+}
+@keyframes slide-in {
+    from{
+        background-color:  #f28aa9;
+        transform: translateX(50vw);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+/*
+@keyframes to-green {
+    0%{
+        background: red;
+    }
+    50%{
+        background: gold;
+    }
+    100%{
+        background: red;
+    }
+}
+@keyframes rotate {
+    from{
+        transform: rotateZ(360deg)
+    }    
+}
